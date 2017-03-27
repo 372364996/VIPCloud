@@ -38,10 +38,10 @@ namespace VIP云解析
                 MessageBox.Show("请输入视频链接！");
                 return;
             }
-            //if (!url.EndsWith(".html"))
-            //{
-            //    url += ".html";
-            //}
+            if (!url.EndsWith(".html"))
+            {
+                url += ".html";
+            }
             string videoUrl = url.Substring(url.LastIndexOf("/") + 1);
             string outVideoUrl = "";
             if (rbtOne.Checked)
